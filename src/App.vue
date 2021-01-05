@@ -1,13 +1,17 @@
 <template>
-  <div class="bg-purple">
-  Test
-</div>
+  <div class="max-w-md m-auto bg-green-100 ">
+    <add-new></add-new>
+  </div>
+  
 </template>
 
+
 <script>
+import AddNew from "./components/buttons/addNew.vue"
 export default {
   name: 'App',
   components: {
+    AddNew
   }
 }
 </script>
