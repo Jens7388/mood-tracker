@@ -1,7 +1,8 @@
 <template>
   <div class="max-w-md m-auto bg-green-100 p-5 border container justify-between">
-    <episode-card-list></episode-card-list>
-    <add-new class="ml-80"></add-new>
+    <episode-card-list v-if="!addingCard"></episode-card-list>
+    <add-form v-else></add-form>
+    <add-new class="ml-80" @click="addingCard = !addingCard"></add-new>
   </div>
   
 </template>
@@ -10,11 +11,18 @@
 <script>
 import AddNew from "./components/buttons/addNew.vue"
 import EpisodeCardList from "./components/cards/episodeCardList.vue"
+import AddForm from './components/other/addForm.vue'
 export default {
   name: 'App',
   components: {
     AddNew,
-    EpisodeCardList
+    EpisodeCardList,
+    AddForm
+  },
+  data(){
+    return{
+      addingCard: false
+    }
   }
 }
 </script>
