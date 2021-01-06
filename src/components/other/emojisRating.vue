@@ -153,3 +153,29 @@
   </label>
 </div>
 </template>
+
+
+<style scoped>
+    .emojis{
+        margin-bottom: 10px;
+        gap: 1.25rem;
+        max-width: 28rem;
+        display:flex;
+        flex-direction: row;
+    }
+    svg{
+        height: 50px;
+        width: 50px;
+    }
+    .emojis svg {
+        box-sizing: content-box;
+        border-radius: 9999px;
+        color:gray;
+    }
+    .emojis svg:hover {
+        box-sizing: content-box;
+        border-radius: 9999px;
+        color:yellow;
+    }
+
+</style>

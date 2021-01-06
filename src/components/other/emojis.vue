@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <svg xmlns="http://www.w3.org/2000/svg">
     <!-- Shit -->
     <symbol id="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
       <g data-name="Group 50">

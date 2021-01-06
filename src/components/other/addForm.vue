@@ -1,9 +1,9 @@
 <template>
   <h2>Hvordan har du det?</h2>
-  <form id="test">
+  <form class="flex flex-col">
     <emojisRating />
-    <input type ="text">
-    <textarea type="text" label="Beskrivelse"/>
+    <input type ="text" placeholder="titel">
+    <textarea type="text" class="my-2" placeholder="indsæt lorem ipsum her...."/>
     <submitButton label="Gem minde"/>
   </form>
 </template>
