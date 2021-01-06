@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-md m-auto bg-green-100 p-5 border">
+  <div class="max-w-md m-auto bg-green-100 p-5 border container justify-between">
     <episode-card-list></episode-card-list>
-    <add-new></add-new>
+    <add-new class="ml-80"></add-new>
   </div>
   
 </template>
