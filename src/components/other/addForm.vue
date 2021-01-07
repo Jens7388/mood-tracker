@@ -21,11 +21,13 @@ export default {
     OtherButton
   },
   methods:{
+//TODO
+    /*
     AddEpisode: () =>{
-      //TODO
+      
       const enteredTitle = this.$refs.titleInput.value;
       const enteredDescription = this.$refs.descriptionInput.value;
-
+      
       const episode = {
             id: 1,
             title: enteredTitle,
@@ -34,7 +36,7 @@ export default {
             date: "En dag"
 
       };
-    }
+    }*/
   }
 }
 </script>
