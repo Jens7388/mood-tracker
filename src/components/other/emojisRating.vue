@@ -71,7 +71,7 @@
   </label>
 
   <!-- Normal -->
-  <input checked type="radio" name="rating" id="normal" hidden>
+  <input type="radio" name="rating" id="normal" hidden>
   <label for="normal">
     <span class="sr-only">Normal</span>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" data-name="Group 15">
@@ -177,5 +177,7 @@
         border-radius: 9999px;
         color:yellow;
     }
-
+    .emojis input:checked +label>svg {
+        color:yellow;
+    }
 </style>
