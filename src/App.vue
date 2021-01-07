@@ -2,7 +2,7 @@
   <div class="max-w-md m-auto bg-green-100 p-5 border container justify-between">
     <episode-card-list v-if="!addingCard"></episode-card-list>
     <add-form v-else></add-form>
-    <add-new class="ml-80" @click="addingCard = !addingCard"></add-new>
+    <add-new class="ml-80" v-if="!addingCard" @click="addingCard = !addingCard"></add-new>
   </div>
   
 </template>
