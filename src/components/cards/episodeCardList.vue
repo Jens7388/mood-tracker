@@ -1,7 +1,7 @@
 <template>
   <episodeCard
     v-for="episode in storedEpisodes"
-    :key ="episode.id"
+    :key="episode.id"
     :title="episode.title"
     :rating="episode.rating"
     :date="episode.date"
@@ -45,6 +45,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    mounted() {
+      this.storedEpisodes =
+        JSON.parse(localStorage.getItem("storedEpisodes")) || [];
+    },
   },
 };
 </script>
