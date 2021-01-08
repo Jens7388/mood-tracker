@@ -2,8 +2,8 @@
   <div class="max-w-3xl m-auto bg-green-100 p-5 border container justify-between">
     <episode-card-list v-if="!addingCard"></episode-card-list>
     <add-form v-else></add-form>
-    <add-new class="ml-80" v-if="!addingCard" @click="addingCard = !addingCard"></add-new>
-    <other-button label="Annuller" v-if="addingCard" @click="addingCard = !addingCard" class="m-2"></other-button>
+    <add-new class="mx-auto" v-if="!addingCard" @click="addingCard = !addingCard"></add-new>
+    <other-button  label="Annuller" v-if="addingCard" @click="addingCard = !addingCard" class="my-2 mx-auto"></other-button>
   </div>
   
 </template>
