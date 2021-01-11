@@ -7,14 +7,17 @@
     :date="episode.date"
     :description="episode.description"
   />
+  <add-new></add-new>
 </template>
 
 <script>
 import EpisodeCard from "../cards/episodeCard.vue";
+import AddNew from "../buttons/addNew.vue"
 export default {
   name: "EpisodeCardList",
   components: {
     EpisodeCard,
+    AddNew
   },
   data() {
     return {

@@ -5,19 +5,22 @@
     <emojisRating class="mx-auto" />
     <h2>Beskrivelse</h2>
     <textarea ref="descriptionInput" rows="10" placeholder="indsæt lorem ipsum her...." />
-    <other-button label="Gem" type="submit"></other-button>
+    <save-new type="submit"></save-new>
+    <cancel></cancel>
   </form>
 </template>
 
 <script>
 import EmojisRating from "./emojisRating.vue";
-import OtherButton from "../buttons/otherButton.vue";
+import SaveNew from "../buttons/saveNew.vue";
+import Cancel from "../buttons/cancel.vue";
 
 export default {
   name: "AddForm",
   components: {
     EmojisRating,
-    OtherButton,
+    SaveNew,
+    Cancel
   },
   methods: {
     addEpisode: () => {
